@@ -15,7 +15,7 @@ static bool default_solid_blue(effect_params_t* params) {
     RGB_MATRIX_USE_LIMITS(led_min, led_max);
     for (uint8_t i = led_min; i < led_max; i++) {
         RGB_MATRIX_TEST_LED_FLAGS();
-        if ((i >= 16 && i < 28) || (i >= 31 && i < 43) || (i >= 46 && i < 57) || (i >= 60 && i < 70) || (i == 71) || (i == 75) || (i >= 79 && i <= 81)) {
+        if ((i >= 16 && i < 28) || (i >= 31 && i < 43) || (i >= 46 && i < 57) || (i >= 60 && i < 70) ) {
             rgb_matrix_set_color(i, 116, 192, 252);
         }
         else {
